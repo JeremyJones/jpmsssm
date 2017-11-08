@@ -1,8 +1,8 @@
-# Super Simple Stock Market by Jeremy Jones
+# Super Simple Stock Market
 
 ## Description
 
-JJ technical coding task, November 2017.
+Technical coding task, Jeremy Jones, November 2017.
 
 ## Synopsis
 
@@ -20,6 +20,61 @@ The core object model key deliverable is located in the file models.py:
             Stock
             Trade
     ...
+
+## Requirements
+
+The file `test.py` contains a suite of tests corresponding to each
+specific requirement:
+
+    $ pydoc ./test.py
+
+    
+    Help on module test:
+    
+    NAME
+        test
+    
+    CLASSES
+        unittest.case.TestCase(builtins.object)
+            ApplicationTestCase
+            MarketTestCase
+            StockTestCase
+        
+    ...
+
+     |  Methods defined here:
+     |  
+     |  setUp(self)
+     |      Application end-to-end test
+     |  
+     |  test_requirement_2_a_i(self)
+     |      For a given stock, calculate the dividend yield.
+     |  
+     |  test_requirement_2_a_ii(self)
+     |      For a given stock, calculate the p/e ratio.
+     |  
+     |  test_requirement_2_a_iii(self)
+     |      For a given stock, record a trade, with timestamp, quantity, buy or sell indicator and price.
+     |  
+     |  test_requirement_2_a_iv(self)
+     |      For a given stock, calculate Volume Weighted Stock Price based on trades in past five minutes.
+     |  
+     |  test_requirement_2_b(self)
+     |      Calculate the GBCE All Share Index using teh geometric mean of the
+     |      Volume Weighted Stock Price for all stocks.
+     |  
+
+and run directly:
+
+     $ python ./test.py
+
+     ............................
+     ----------------------------------------------------------------------
+     Ran 28 tests in 0.040s
+     
+     OK
+
+     $
 
 ## Demonstration
 
