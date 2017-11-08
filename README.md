@@ -126,6 +126,7 @@ This repository contains:
 
 * README.md - this file
 * models.py - **primary object code**
+* data.py - file containing the sample data structure
 * demo.py - demonstration script
 * test.py - unittest script
 
